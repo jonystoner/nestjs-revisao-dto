@@ -11,6 +11,7 @@ import { IsNotEmpty,IsNumber, IsString } from "class-validator";
 export class CriarProduto {
     @IsString()
     @IsNotEmpty()
+    nome:string
     
     @IsNumber()
     preco: number;
